@@ -1,0 +1,27 @@
+{
+  "name": "test-megogo",
+  "version": "1.0.0",
+  "description": "An experimental page with vertical scrolling.",
+  "homepage": "https://serg-rsv.github.io/test-megogo",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /test-megogo/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serg-rsv/test-megogo.git"
+  },
+  "keywords": [],
+  "author": "Serhii Rybak <rybaksw@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

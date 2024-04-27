@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 57px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgb(35, 195, 178);
+
+  border-radius: 5px;
+  border-color: transparent;
+
+  transition: background-color 200ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(35, 195, 178, 0.7);
+  }
+}
