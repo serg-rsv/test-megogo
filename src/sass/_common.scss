@@ -1,1 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}

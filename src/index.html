@@ -5,11 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/logo.png" type="image/png" />
     <title>MEGOGO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <h1>Головна сторінка</h1>
-    <include src="./partials/example.html"></include>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <include src="./partials/screen1.html"></include>
+        </div>
+        <div class="swiper-slide">
+          <include src="./partials/screen2.html"></include>
+        </div>
+        <div class="swiper-slide">
+          <include src="./partials/screen3.html"></include>
+        </div>
+        <div class="swiper-slide">
+          <include src="./partials/screen4.html"></include>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+      });
+    </script>
   </body>
 </html>
