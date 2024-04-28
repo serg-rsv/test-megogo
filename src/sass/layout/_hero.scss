@@ -25,6 +25,8 @@
 .arrow {
   position: absolute;
   bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, 0%);
 
   animation: infinite upAndDown;
   animation-duration: 3s;
@@ -33,26 +35,26 @@
 @keyframes upAndDown {
   0%,
   100% {
-    transform: translateY(0%);
+    transform: translate(-50%, 0%);
   }
 
   15% {
-    transform: translateY(-20px);
+    transform: translate(-50%, -20px);
   }
 
   30% {
-    transform: translateY(10px);
+    transform: translate(-50%, 10px);
   }
 
   45% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 
   60% {
-    transform: translateY(6px);
+    transform: translate(-50%, 6px);
   }
 
   75% {
-    transform: translateY(-3px);
+    transform: translate(-50%, -3px);
   }
 }
