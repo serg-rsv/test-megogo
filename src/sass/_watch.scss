@@ -1,0 +1,30 @@
+.watch-title {
+  @extend %subtitle;
+
+  width: 190px;
+  margin-bottom: 16px;
+
+  @include mq(mobileM) {
+    width: 210px;
+    margin-bottom: 18px;
+  }
+
+  @include mq(mobileL) {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+}
+
+.watch-description {
+  @extend %main;
+
+  width: 190px;
+
+  @include mq(mobileM) {
+    width: 210px;
+  }
+
+  @include mq(mobileL) {
+    width: 220px;
+  }
+}

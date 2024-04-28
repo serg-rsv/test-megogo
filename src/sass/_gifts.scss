@@ -1,0 +1,22 @@
+.screen--gifts {
+  padding-top: 90px;
+  padding-right: 30px;
+}
+
+.gifts-title {
+  @extend %subtitle;
+
+  margin-bottom: 16px;
+
+  @include mq(mobileM) {
+    margin-bottom: 18px;
+  }
+
+  @include mq(mobileL) {
+    margin-bottom: 20px;
+  }
+}
+
+.gifts-description {
+  @extend %main;
+}

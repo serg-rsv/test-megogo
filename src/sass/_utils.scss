@@ -1,0 +1,63 @@
+@mixin mq($range) {
+  @if $range == mobileS {
+    @media (min-width: $mobileS) {
+      @content;
+    }
+  } @else if $range == mobileM {
+    @media (min-width: $mobileM) {
+      @content;
+    }
+  } @else if $range == mobileL {
+    @media (min-width: $mobileL) {
+      @content;
+    }
+  } @else if $range == retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+
+%title {
+  font-size: $font-size-title;
+  font-weight: 600;
+
+  @include mq(mobileM) {
+    font-size: $font-size-title-m;
+  }
+
+  @include mq(mobileL) {
+    font-size: $font-size-title-l;
+  }
+}
+
+%subtitle {
+  font-size: $font-size-subtitle;
+  font-weight: 600;
+
+  @include mq(mobileM) {
+    font-size: $font-size-subtitle-m;
+  }
+
+  @include mq(mobileL) {
+    font-size: $font-size-subtitle-l;
+  }
+}
+
+%main {
+  font-size: $font-size-main;
+  color: $color-paper;
+
+  @include mq(mobileM) {
+    font-size: $font-size-main-m;
+  }
+
+  @include mq(mobileL) {
+    font-size: $font-size-main-l;
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <title>MEGOGO</title>
     <link
       rel="stylesheet"
@@ -16,20 +16,25 @@
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <include src="./partials/screen1.html"></include>
+        <div class="swiper-slide background background--tiger">
+          <include src="./partials/hero.html"></include>
+        </div>
+        <div class="swiper-slide background background--pug">
+          <include src="./partials/watch.html"></include>
+        </div>
+        <div class="swiper-slide background background--chick">
+          <include src="./partials/optima.html"></include>
+        </div>
+        <div class="swiper-slide background background--partners">
+          <div class="background--gradient">
+            <include src="./partials/gifts.html"></include>
+          </div>
         </div>
         <div class="swiper-slide">
-          <include src="./partials/screen2.html"></include>
-        </div>
-        <div class="swiper-slide">
-          <include src="./partials/screen3.html"></include>
-        </div>
-        <div class="swiper-slide">
-          <include src="./partials/screen4.html"></include>
+          <include src="./partials/advantages.html"></include>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <!-- Swiper JS -->
@@ -37,11 +42,14 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper('.mySwiper', {
+      const swiper = new Swiper('.mySwiper', {
         direction: 'vertical',
         slidesPerView: 1,
-        spaceBetween: 30,
         mousewheel: true,
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: true,
+        },
       });
     </script>
   </body>

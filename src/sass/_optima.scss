@@ -1,0 +1,70 @@
+.screen--optima {
+  padding-top: 36px;
+}
+
+.optima-text {
+  @extend %main;
+
+  margin-bottom: 5px;
+
+  color: $color-light;
+}
+
+.optima-title {
+  @extend %subtitle;
+
+  margin-bottom: 100px;
+}
+
+.optima-strong {
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: 600;
+
+  @include mq(mobileM) {
+    font-size: 40px;
+  }
+
+  @include mq(mobileL) {
+    font-size: 44px;
+  }
+}
+
+.optima-descritpion {
+  @extend %main;
+
+  margin-bottom: 40px;
+
+  color: $color-light;
+}
+
+.optima-price {
+  @extend %subtitle;
+
+  margin-bottom: 16px;
+}
+
+.optima-button {
+  margin-bottom: 10px;
+}
+
+.optima-details {
+  margin-bottom: 20px;
+
+  font-size: 12px;
+  color: $color-paper;
+
+  @include mq(mobileL) {
+    font-size: 14px;
+  }
+}
+
+.link {
+  font-size: 11px;
+  text-transform: uppercase;
+
+  @include mq(mobileM) {
+    font-size: 14px;
+  }
+}

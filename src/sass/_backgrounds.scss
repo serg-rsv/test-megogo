@@ -1,0 +1,89 @@
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background--tiger {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/tiger@1x.jpg');
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 5%,
+        rgba(0, 0, 0, 0) 60%
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/tiger@2x.jpg');
+  }
+}
+
+.background--pug {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/pug@1x.jpg');
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 5%,
+        rgba(0, 0, 0, 0) 60%
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../images/pug@2x.jpg');
+  }
+}
+
+.background--chick {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 0) 60%
+    ),
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/chick@1x.jpg');
+
+  @include mq(retina) {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 1) 5%,
+        rgba(0, 0, 0, 0) 60%
+      ),
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('../images/chick@2x.jpg');
+  }
+}
+
+.background--partners {
+  background-image: url('../images/partners@1x.png');
+  background-position: bottom;
+  background-size: contain;
+
+  @include mq(retina) {
+    background-image: url('../images/partners@2x.png');
+  }
+
+  @include mq(mobileS) {
+    background-size: calc(100vh - 250px);
+  }
+}
+
+.background--gradient {
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(0, 0, 0, 0) 60%
+  );
+}

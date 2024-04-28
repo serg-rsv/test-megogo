@@ -1,0 +1,35 @@
+.screen--advantages {
+  padding-top: 90px;
+  padding-right: 30px;
+}
+
+.strong {
+  @extend %subtitle;
+
+  margin-bottom: 30px;
+}
+
+.list {
+  margin-bottom: 50px;
+  display: grid;
+  row-gap: 40px;
+  column-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+}
+
+.list__item {
+  width: 135px;
+
+  @include mq(mobileL) {
+    width: 150px;
+  }
+}
+
+.item__title {
+  font-size: 20px;
+  font-weight: 600;
+
+  @include mq(mobileL) {
+    font-size: 24px;
+  }
+}
