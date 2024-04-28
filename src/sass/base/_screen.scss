@@ -1,6 +1,7 @@
 .screen {
   height: 100%;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 20px;
 
   @include mq(mobileM) {
     padding: 60px;

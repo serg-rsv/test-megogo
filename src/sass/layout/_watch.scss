@@ -1,3 +1,11 @@
+.screen--watch {
+  padding-top: 20px;
+
+  @include mq(mobileM) {
+    padding-top: 80px;
+  }
+}
+
 .watch-title {
   @extend %subtitle;
 
